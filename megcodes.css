@@ -557,6 +557,14 @@ h2 {
    background-color: #f1eeff;
 }
 
+/* Smaller screens */
+@media (max-width: 799px) {
+   .content {
+      margin-left: 5%;
+      margin-right: 5%;
+   }
+}
+
 .video-wrapper {
    position: relative;
 }
