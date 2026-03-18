@@ -209,6 +209,16 @@ h1 {
 h2 {
    font-family: "Redaction";
    font-style: italic;
+   font-size: 8.5vw;
+   text-align: center;
+   text-decoration: underline;
+   @media (min-width: 768px) {
+      font-size: 35px;
+   }
+}
+h3 {
+   font-family: "Redaction";
+   font-style: italic;
    font-size: 4.5vw;
    text-align: center;
    text-decoration: underline;
