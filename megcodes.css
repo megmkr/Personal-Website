@@ -2,7 +2,7 @@
  *	WebFont Package Licensed to Megan Mkrtchyan
  */
 @font-face {
-   font-family: "Nagel";
+   font-family: Nagel;
    src: url("nagel-font-family/Nagel_Regular.woff") format("woff2");
    font-weight: 400;
    font-style: normal;
@@ -10,7 +10,7 @@
 }
 /* Redaction Regular */
 @font-face {
-   font-family: "Redaction";
+   font-family: Redaction;
    src: url("woff2/Redaction-Regular.woff2") format("woff2");
    font-weight: 400;
    font-style: normal;
@@ -19,7 +19,7 @@
 
 /* Redaction Italic */
 @font-face {
-   font-family: "Redaction";
+   font-family: Redaction;
    src: url("woff2/Redaction-Italic.woff2") format("woff2");
    font-weight: 400;
    font-style: italic;
@@ -28,7 +28,7 @@
 
 /* Redaction Bold */
 @font-face {
-   font-family: "Redaction";
+   font-family: Redaction;
    src: url("woff2/Redaction-Bold.woff2") format("woff2");
    font-weight: 700;
    font-style: normal;
@@ -206,8 +206,17 @@ h1 {
       font-size: 9.5vw;
    }
 }
+.about-me {
+   text-align: left;
+   margin-left: 30px;
+   font-size: 10vw;
+   color: #4357ad;
+   @media (min-width: 768px) {
+      font-size: 6vw;
+   }
+}
 h2 {
-   font-family: "Redaction";
+   font-family: Redaction;
    font-style: italic;
    font-size: 8.5vw;
    text-align: center;
@@ -217,7 +226,7 @@ h2 {
    }
 }
 h3 {
-   font-family: "Redaction";
+   font-family: Redaction;
    font-style: italic;
    font-size: 4.5vw;
    text-align: center;
@@ -319,7 +328,7 @@ p {
 
 /* off-screen-menu */
 .off-screen-menu {
-   font-family: "Nagel";
+   font-family: Nagel;
    height: auto; /* Allow height to adjust dynamically */
    position: absolute;
    left: 5%;
@@ -607,7 +616,7 @@ p {
    color: white;
    font-size: 2vw;
    z-index: 2;
-   font-family: "Nagel";
+   font-family: Nagel;
 }
 
 .matched-video {
@@ -681,7 +690,6 @@ p {
    color: #ffffff;
 }
 .tags {
-   font-family: "Nagel";
    font-size: 3vw;
    margin-left: 5%;
    margin-right: 5%;
