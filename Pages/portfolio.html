@@ -1,7 +1,24 @@
+<!doctype html>
+<script>
+   function scrollCarouselLeft() {
+      document.getElementById("track").scrollBy({ left: -300, behavior: "smooth" });
+   }
 
-<!DOCTYPE html>
+   function scrollCarouselRight() {
+      document.getElementById("track").scrollBy({ left: 300, behavior: "smooth" });
+   }
+   function openModal(src) {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modal-img");
+      modal.style.display = "flex";
+      modalImg.src = src;
+   }
+
+   function closeModal() {
+      document.getElementById("modal").style.display = "none";
+   }
+</script>
 <html class="no-js" lang="en" style="background-color: #f7ede2">
-   
    <head class="wrapper">
       <meta charset="utf-8" />
       <title>MEG CODES</title>
@@ -10,92 +27,170 @@
       <!-- Favicon -->
       <link rel="icon" type="../Images/favicon.png" href="../Images/favicon.png" />
       <!-- Menu -->
-      <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+      <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
          <a href="#" class="nav">
-            
             <div class="one"></div>
             <div class="two"></div>
             <div class="three"></div>
          </a>
          <div class="off-screen-menu">
             <ul>
-               <li class="one1" onclick="location.href='aboutme.html'">About Me</li>
-               <li class="two2" onclick="location.href='portfolio.html'">Portfolio</li>
-               <li class = "three3" onclick="location.href='resume.html'">Resume</li>
-               <!-- <li class = "four4" onclick="location.href='contact.html'">Contact</li> -->
+               <li class="one1" onclick="location.href = 'aboutme.html'">About Me</li>
+               <li class="two2" onclick="location.href = 'portfolio.html'">Portfolio</li>
+               <li class="three3" onclick="location.href = 'resume.html'">Resume</li>
             </ul>
          </div>
-         
-         <hr class = "line"> </hr>
-         <a href="../index.html" class = "house-icon"> <img border="0" alt="Home" src="../Images/House.png" width="60" height="60"> </a>
+         <hr class="line" />
+         <a href="../index.html" class="house-icon"> <img border="0" alt="Home" src="../Images/House.png" width="60" height="60" /> </a>
          <script src="../app.js"></script>
       </div>
-      
    </head>
    <body>
-   <h1 style="text-align: center;margin-left: 30px; color: #4357ad; font-size:10vw">
-         <span class="glitch" data-glitch="P" style="font-family: 'Redaction 10'; display: inline-block; position: relative;" data-text="P">P</span>
-         <span class="glitch" data-glitch="o" style="font-family: 'Redaction 20'; display: inline-block; position: relative;" data-text="o">o</span>
-         <span class="glitch" data-glitch="r" style="font-family: 'Redaction 30'; display: inline-block; position: relative;" data-text="r">r</span>
-         <span class="glitch" data-glitch="t" style="font-family: 'Redaction 50'; display: inline-block; position: relative;" data-text="t">t</span>
-         <span class="glitch" data-glitch="f" style="font-family: 'Redaction 70'; display: inline-block; position: relative;" data-text="f">f</span>
-         <span class="glitch" data-glitch="o" style="font-family: 'Redaction 70'; display: inline-block; position: relative;" data-text="o">o</span>
-         <span class="glitch" data-glitch="l" style="font-family: 'Redaction 100'; display: inline-block; position: relative;" data-text="l">l</span>
-         <span class="glitch" data-glitch="i" style="font-family: 'Redaction 100'; display: inline-block; position: relative;" data-text="i">i</span>
-         <span class="glitch" data-glitch="o" style="font-family: 'Redaction 100'; display: inline-block; position: relative;" data-text="o">o</span>
+      <h1 style="text-align: center; margin-left: 30px; color: #4357ad; font-size: 10vw">
+         <span class="glitch" data-glitch="P" style="font-family: &quot;Redaction 10&quot;; display: inline-block; position: relative" data-text="P">P</span>
+         <span class="glitch" data-glitch="o" style="font-family: &quot;Redaction 20&quot;; display: inline-block; position: relative" data-text="o">o</span>
+         <span class="glitch" data-glitch="r" style="font-family: &quot;Redaction 30&quot;; display: inline-block; position: relative" data-text="r">r</span>
+         <span class="glitch" data-glitch="t" style="font-family: &quot;Redaction 50&quot;; display: inline-block; position: relative" data-text="t">t</span>
+         <span class="glitch" data-glitch="f" style="font-family: &quot;Redaction 70&quot;; display: inline-block; position: relative" data-text="f">f</span>
+         <span class="glitch" data-glitch="o" style="font-family: &quot;Redaction 70&quot;; display: inline-block; position: relative" data-text="o">o</span>
+         <span class="glitch" data-glitch="l" style="font-family: &quot;Redaction 100&quot;; display: inline-block; position: relative" data-text="l">l</span>
+         <span class="glitch" data-glitch="i" style="font-family: &quot;Redaction 100&quot;; display: inline-block; position: relative" data-text="i">i</span>
+         <span class="glitch" data-glitch="o" style="font-family: &quot;Redaction 100&quot;; display: inline-block; position: relative" data-text="o">o</span>
+      </h1>
+      <h2 style="font-family: &quot;Nagel&quot;; font-size: 35px; color: #f28482; margin-top: 0%">Google Advanced Data Analytics Professional Certificate</h2>
+      <p style="font-family: &quot;Nagel&quot;; font-size: 22px; text-align: justify; margin-left: 10%; margin-right: 10%">
+         This program includes over 200 hours of instruction and hundreds of practice-based assessments, learning through real-world advanced data analytics scenarios that are critical for success in the workplace. The content is highly interactive and
+         exclusively developed by Google employees with decades of experience in advanced data analytics and data science. Through a mix of videos, assessments, and hands-on labs, I was introduced to advanced data analytics tools and platforms and key
+         technical skills required for an advanced role.
+      </p>
+      <p style="font-family: &quot;Nagel&quot;; font-size: 22px; text-align: justify; margin-left: 10%; margin-right: 10%">
+         All project code is available to view on my <a href="https://github.com/stars/megmkr/lists/google-adv-data-analytics-cert">Github</a> profile.
+      </p>
+      <div class="tags" style="font-family: &quot;Nagel&quot;; font-size: 22px; margin-left: 20%; margin-right: 20%; justify-content: center">
+         <span class="tag">Pandas</span>
+         <span class="tag">NumPy</span>
+         <span class="tag">Matplotlib</span>
+         <span class="tag">Data cleaning & EDA</span>
+         <span class="tag">Tableau</span>
+         <span class="tag">Hypothesis testing</span>
+         <span class="tag">Supervised & unsupervised learning</span>
+         <span class="tag">A/B testing</span>
+         <span class="tag">Model evaluation</span>
+         <span class="tag">Feature engineering</span>
+      </div>
 
-          </h1>
-          <div class="text-video-container">
-            <div class="text-section" style="align-items: start;">
-               <h2 style="font-family: 'Nagel'; font-size: 3vw; color: #f28482; margin-top: 0%;">LinkedIn Data Scraping</h2>
-               <p style="font-family:'Nagel'; font-size: 1.4vw; text-align: justify;">I led the development of a Python-based web scraper to automate the collection of alumni employment data from LinkedIn, supplementing Point Loma Nazarene University’s traditional survey process. Using Selenium, I simulated browser behavior to locate and access alumni profiles, followed by BeautifulSoup for HTML parsing and Pandas for structuring the data. To navigate LinkedIn’s bot detection and HTML inconsistencies, I implemented conditional logic and timing strategies that stabilized scraping performance across nearly 1,000 profiles. I also conducted extensive debugging and testing to ensure accurate matching by city and education data, even when alumni didn’t list the university explicitly. <br><br>
-               The project output was a clean, structured Excel dataset containing names, cities, job history, and profile metadata — ready for analysis and institutional use. My work directly enabled the university to improve alumni engagement, support federal reporting, and better showcase career outcomes to current students. I applied data validation logic to distinguish between guaranteed alumni matches and likely-but-unverified ones, improving the reliability of the dataset. Looking ahead, this codebase can be extended to track alumni employment trends, calculate unemployment rates, and analyze alignment between degrees and career paths.<br><br>
-               <span class='purple'>Overall alumni profile yield describes the percentage of profiles found from 959 entries.</span><br><br>
-               <span class='teal'>Guaranteed profile yield describes the percentage of guaranteed PLNU profiles found from 959 entries.</span>
-               </p>
-            </div>
-            <div class="video-section">
-               <video class="matched-video" autoplay muted loop playsinline>
-               <source src="../Images/LinkedIn Demo.mov" type="video/mp4">
-               Your browser does not support the video tag.
-               </video>
-            
-               <div class="image-row">
-                  <img src="../Images/Screenshot 2025-07-15 at 7.37.35 PM.png" alt="Chart 1" >
-                  <img src="../Images/Screenshot 2025-07-15 at 7.37.13 PM.png" alt="Chart 2" >
-               </div>
-            </div>
-         </div>
-         <hr style = "border-top: 4px solid #4357ad; text-align: center; width:60%"> </hr>
-         <div class="text-video-container">
-            <div class="video-section">
-               <video class="matched-video" autoplay muted loop playsinline>
-               <source src="../Images/Res Demo.mov" type="video/mp4">
-               Your browser does not support the video tag.
-               </video>
-            </div>
-            <div class="text-section ">
-               <h2 style="font-family: 'Nagel'; font-size: 3vw; color: #f28482">Hindcasting Water Supply</h2>
-               <p style="font-family:'Nagel'; font-size: 1.4vw; text-align: justify;">I developed a full-stack hindcasting tool to analyze and visualize historical reservoir storage patterns across the U.S. The project involved designing a PostgreSQL database to manage historical reservoir data, building a Python-based pipeline for preprocessing and training machine learning models, and delivering an interactive Django dashboard. This dashboard allows users to explore predicted and observed reservoir storage values by region, making hydrological insights accessible to researchers, policymakers, and the public. The model supports better water resource planning by revealing trends and deviations in reservoir behavior over time.</p>
-            </div>
-            
-         </div>
-         <div class="photo-grid">
-            <img src="../Images/Indep Lake DTR.png" alt="Photo 1">
-            <img src="../Images/Stampede DTR.png" alt="Photo 3">
-         </div>
-      <hr style = "border-top: 4px solid #4357ad; text-align: center; width:60%"> </hr>
+      <br />
+      <div class="carousel">
+         <button class="nav2" onclick="scrollCarouselLeft()">❮</button>
 
-   <h1 class = "teal" style="font-family: 'Redaction'; text-align: center; font-style: italic; font-size: 9vw;">What's She Doing Now?</h1>
-   <p style="font-family: 'Nagel'; font-size: 1.4vw; margin-left: 27%; margin-right: 27%;text-align: justify;">As the final project for Course 2 of the <span class='pink'>Google Advanced Data Analytics Certificate</span>, I am working on a Python-based analysis of user churn for Waze. This project focuses on cleaning and inspecting real user data to uncover behavioral patterns between retained and churned users. Using pandas and NumPy, I explored driving habits, device usage, and potential user personas—like long-haul drivers—to help inform strategies for retention. This hands-on lab deepens my skills in <span class='teal'>EDA, hypothesis development, and data storytelling</span>.
-      <br><br>
-</p>
-  </body>
+         <div class="carousel-track" id="track">
+            <img src="../Images/Capstone Executive Summary.png" onclick="openModal(this.src)" />
+            <img src="../Images/Course 6 Executive Summary.png" onclick="openModal(this.src)" />
+            <img src="../Images/Course 5 Executive Summary Document.png" onclick="openModal(this.src)" />
+            <img src="../Images/Course 4 Executive Summary.png" onclick="openModal(this.src)" />
+            <img src="../Images/Executive Summary_Course 3.png" onclick="openModal(this.src)" />
+         </div>
+
+         <button class="nav2" onclick="scrollCarouselRight()">❯</button>
+      </div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal" onclick="closeModal()">
+         <span class="close">&times;</span>
+         <img id="modal-img" />
+      </div>
+      <br /><br />
+      <hr style="border-top: 4px solid #4357ad; text-align: center; width: 60%" />
+
+      <div class="text-video-container">
+         <div class="text-section" style="align-items: start">
+            <h2 style="font-family: &quot;Nagel&quot;; font-size: 35px; color: #f28482; margin-top: 0%">LinkedIn Data Scraping</h2>
+            <p style="font-family: &quot;Nagel&quot;; font-size: 22px; text-align: justify">
+               I led the development of a Python-based web scraper to automate the collection of alumni employment data from LinkedIn, supplementing Point Loma Nazarene University’s traditional survey process. Using Selenium, I simulated browser behavior
+               to locate and access alumni profiles, followed by BeautifulSoup for HTML parsing and Pandas for structuring the data. To navigate LinkedIn’s bot detection and HTML inconsistencies, I implemented conditional logic and timing strategies that
+               stabilized scraping performance across nearly 1,000 profiles. I also conducted extensive debugging and testing to ensure accurate matching by city and education data, even when alumni didn’t list the university explicitly. <br /><br />
+               The project output was a clean, structured Excel dataset containing names, cities, job history, and profile metadata — ready for analysis and institutional use. My work directly enabled the university to improve alumni engagement, support
+               federal reporting, and better showcase career outcomes to current students. I applied data validation logic to distinguish between guaranteed alumni matches and likely-but-unverified ones, improving the reliability of the dataset. Looking
+               ahead, this codebase can be extended to track alumni employment trends, calculate unemployment rates, and analyze alignment between degrees and career paths.<br /><br />
+               <span class="purple">Overall alumni profile yield describes the percentage of profiles found from 959 entries.</span><br /><br />
+               <span class="teal">Guaranteed profile yield describes the percentage of guaranteed PLNU profiles found from 959 entries.</span>
+            </p>
+         </div>
+         <section class="video-section">
+            <div class="video-loader" id="linkedinLoader">Loading...</div>
+
+            <video id="linkedinVideo" class="matched-video" autoplay muted loop playsinline>
+               <source src="../Images/LinkedIn Demo.mov" type="video/mp4" />
+            </video>
+
+            <div class="image-row">
+               <img src="../Images/Screenshot 2025-07-15 at 7.37.35 PM.png" alt="Chart 1" />
+               <img src="../Images/Screenshot 2025-07-15 at 7.37.13 PM.png" alt="Chart 2" />
+            </div>
+         </section>
+      </div>
+
+      <hr style="border-top: 4px solid #4357ad; text-align: center; width: 60%" />
+
+      <div class="text-video-container">
+         <section class="video-section">
+            <div class="video-loader" id="resLoader">Loading...</div>
+
+            <video id="resVideo" class="matched-video" autoplay muted loop playsinline>
+               <source src="../Images/ResDemo.mov" type="video/mp4" />
+            </video>
+         </section>
+         <div class="text-section">
+            <h2 style="font-family: &quot;Nagel&quot;; font-size: 35px; color: #f28482">Hindcasting Water Supply</h2>
+            <p style="font-family: &quot;Nagel&quot;; font-size: 22px; text-align: justify">
+               I developed a full-stack hindcasting tool to analyze and visualize historical reservoir storage patterns across the U.S. The project involved designing a PostgreSQL database to manage historical reservoir data, building a Python-based
+               pipeline for preprocessing and training machine learning models, and delivering an interactive Django dashboard. This dashboard allows users to explore predicted and observed reservoir storage values by region, making hydrological insights
+               accessible to researchers, policymakers, and the public. The model supports better water resource planning by revealing trends and deviations in reservoir behavior over time.
+            </p>
+            <p style="font-family: &quot;Nagel&quot;; font-size: 22px; text-align: justify">
+               As displayed by the graphs below, the model created is highly accurate. The red line visualizes the actual reservoir values while the blue line visualizes the model's prediction. They almost entirely overlap.
+            </p>
+         </div>
+      </div>
+
+      <div class="photo-grid">
+         <img src="../Images/Indep Lake DTR.png" alt="Photo 1" class="same-height" />
+         <img src="../Images/Stampede DTR.png" alt="Photo 3" class="same-height" />
+      </div>
+      <hr style="border-top: 4px solid #4357ad; text-align: center; width: 60%" />
+      <h1 class="teal" style="font-family: &quot;Redaction&quot;; text-align: center; font-style: italic; font-size: 9vw">What's She Doing Now?</h1>
+      <p style="font-family: &quot;Nagel&quot;; font-size: 22px; margin-left: 10%; margin-right: 10%; text-align: justify">
+         I’m currently developing Synq, an all-in-one cycle syncing platform designed to help users better understand and work with their hormonal patterns. The app translates cycle phases into personalized daily guidance across workouts, nutrition,
+         skincare, and emotional wellbeing. Rather than functioning as a traditional tracker, Synq focuses on actionable insights—helping users know what their body needs each day. It combines symptom logging with phase-based recommendations to create a
+         more intuitive, holistic experience. The goal is to simplify hormone health and make it accessible through thoughtful design and personalized intelligence. Synq is currently in development as a mobile-first application with an emphasis on
+         user-centered wellness and data-driven insights.
+      </p>
+      <br /><br />
+      <script>
+         // LinkedIn video
+         const linkedinVideo = document.getElementById("linkedinVideo");
+         const linkedinLoader = document.getElementById("linkedinLoader");
+
+         linkedinVideo.addEventListener("canplaythrough", () => {
+            linkedinLoader.style.display = "none";
+            linkedinVideo.style.display = "block";
+         });
+
+         // Res demo video
+         const resVideo = document.getElementById("resVideo");
+         const resLoader = document.getElementById("resLoader");
+
+         resVideo.addEventListener("canplaythrough", () => {
+            resLoader.style.display = "none";
+            resVideo.style.display = "block";
+         });
+      </script>
+   </body>
    <div>
-      <hr style = "border-top: 4px solid #4357ad; text-align: center; "> </hr>
-      <p class = "footer">
-         Coded With &#10084 <br>
-         Megan Mkrtchyan ©2025 <br>
+      <hr style="border-top: 4px solid #4357ad; text-align: center" />
+      <p class="footer">
+         Coded With &#10084; <br />
+         Megan Mkrtchyan ©2026 <br />
       </p>
    </div>
 </html>
