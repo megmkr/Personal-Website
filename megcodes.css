@@ -238,7 +238,7 @@ h3 {
 p {
    font-size: 3vw;
    @media (min-width: 768px) {
-      font-size: 16px;
+      font-size: 22px;
    }
 }
 
@@ -529,6 +529,7 @@ p {
    justify-content: space-between;
    gap: 1rem;
    margin-bottom: 1rem;
+   margin-top: 1rem;
 }
 
 .image-row img {
@@ -539,10 +540,11 @@ p {
 }
 .photo-grid {
    display: flex;
-   grid-template-columns: 1fr;
    gap: 1rem;
+   justify-content: center;
    max-width: 1300px;
    flex-wrap: wrap;
+   margin: 0 auto;
 }
 
 .same-height {
